@@ -1,0 +1,28 @@
+/* COLOURS */
+
+$primary-color: #00487F;
+$secondary-color: darken(adjust-hue($primary-color, 170), 20%);
+$dark-color: #009C8B;
+$light-color: #59B784;
+
+$success-color: #59B784;
+$success-dark: darken($success-color, 20%);
+$alert-color: tomato;
+
+/* GREY SCALE */
+$black: hsl(0, 0%, 0%); // hue 0-360 | saturation 0-100% | lightness 0-100%;
+$grey-darker: #3c3c3b;
+$grey-dark: #706f6f;
+$grey: #9d9d9c;
+$grey-light: #dadada;
+$grey-lighter: #ededed;
+$grey-lightest: #f6f6f6;
+$white: hsl(0, 0%, 100%); // #ffffff;
+
+@mixin bgcolor-opacity($color, $opacity) {
+  background-color: rgba($color, $opacity);
+}
+
+@mixin linear-gradient($direction, $color-1, $color-2) {
+  background: linear-gradient($direction, $color-1, $color-2);
+}
